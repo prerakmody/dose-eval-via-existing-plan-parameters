@@ -1,0 +1,34 @@
+PTV_DL1_DVH;V95%DL1 (%);
+PTV_DL1_obj;D0.03cc (%DL1);Dmean (%DL1)
+PTV_DL2_DVH;V95%DL2 (%);
+PTV_DL2_obj;Dmean (%DL2);D0.03cc (%DL2)
+SpinalCord;D0.03cc (cGy);
+SpinalCord+3;D0.03cc (cGy);
+Brainstem_Surf;D0.03cc (cGy);
+Brainstem_Core;D0.03cc (cGy);
+OpticChiasm;D0.03cc (cGy);
+OpticNrv_L;D0.03cc (cGy);
+OpticNrv_R;D0.03cc (cGy);
+Eye_L;D0.03cc (cGy);
+Eye_R;D0.03cc (cGy);
+Brain;D0.03cc (cGy);D2% (cGy)
+Pituitary;Dmean (cGy);
+Lens_L;D0.03cc (cGy);
+Lens_R;D0.03cc (cGy);
+Cochlea_L;Dmean (cGy);
+Cochlea_R;Dmean (cGy);
+Parotid_L;Dmean (cGy);
+Parotid_R;Dmean (cGy);
+Glnd_Submand_L;Dmean (cGy);
+Glnd_Submand_R;Dmean (cGy);
+Oral_Cavity;Dmean (cGy);
+Musc_Constrict_S;Dmean (cGy);
+Musc_Constrict_M;Dmean (cGy);
+Musc_Constrict_I;Dmean (cGy);
+Cricopharyngeus;Dmean (cGy);
+Larynx_SG;Dmean (cGy);
+Esophagus;Dmean (cGy);
+Glottic_Area;Dmean (cGy);
+Bone_Mandible;D2% (cGy);
+Bone_Mandible-PTV;D2% (cGy);
+

@@ -1,0 +1,406 @@
+<?xml version="1.0" encoding="ASCII" standalone="yes"?>
+<RayStationScriptTemplates>
+    <ObjectiveTemplate>
+        <Roi name="PTV_DL1_DVH">
+            <OptimizationFunction functionType="MinDose" conditionalDoseLevelCount="2">
+                <FunctionParameters weight="80">
+                    <DoseLevel relativeToDoseLevel="DL1">100</DoseLevel>
+                </FunctionParameters>
+            </OptimizationFunction>
+            <OptimizationFunction functionType="MinDose" conditionalDoseLevelCount="1">
+                <FunctionParameters weight="80">
+                    <DoseLevel relativeToDoseLevel="DL1">97</DoseLevel>
+                </FunctionParameters>
+            </OptimizationFunction>
+        </Roi>
+
+        <Roi name="PTV_DL1_obj">
+            <OptimizationFunction functionType="MaxDose">
+                <FunctionParameters weight="50">
+                    <DoseLevel relativeToDoseLevel="DL1">102</DoseLevel>
+                </FunctionParameters>
+            </OptimizationFunction>
+        </Roi>  
+
+        <Roi name="ring&lt;PTV_DL1"> <!-- ring<PTV_DL1 -->
+            <OptimizationFunction functionType="MinDose">
+                <FunctionParameters weight="0">
+                    <DoseLevel relativeToDoseLevel="DL1">96</DoseLevel>
+                </FunctionParameters>
+            </OptimizationFunction>
+        </Roi>
+
+        <Roi name="PTV_DL2_obj">
+            <OptimizationFunction functionType="MinDose">
+                <FunctionParameters weight="80">
+                    <DoseLevel relativeToDoseLevel="DL2">100</DoseLevel>
+                </FunctionParameters>
+            </OptimizationFunction>
+            <OptimizationFunction functionType="MaxDose">
+                <FunctionParameters weight="50">
+                    <DoseLevel relativeToDoseLevel="DL2">102</DoseLevel>
+                </FunctionParameters>
+            </OptimizationFunction>
+            <OptimizationFunction functionType="UniformDose">
+                <FunctionParameters weight="10">
+                    <DoseLevel relativeToDoseLevel="DL2">100</DoseLevel>
+                </FunctionParameters>
+            </OptimizationFunction>
+        </Roi>
+
+        <Roi name="ring&lt;PTV_DL2"> <!-- ring<PTV_DL2 -->
+            <OptimizationFunction functionType="MinDose">
+                <FunctionParameters weight="0">
+                    <DoseLevel relativeToDoseLevel="DL2">96</DoseLevel>
+                </FunctionParameters>
+            </OptimizationFunction>
+        </Roi>
+
+        <Roi name="Body">
+            <OptimizationFunction functionType="DoseFallOff">
+                <FunctionParameters adaptToTargetDoseLevels="true" lowDoseDistance="5.00" weight="1">
+                    <HighDoseLevel relativeToDoseLevel="DL1">100</HighDoseLevel>
+                    <LowDoseLevel relativeToDoseLevel="DL1">0</LowDoseLevel>
+                </FunctionParameters>
+            </OptimizationFunction>
+            <OptimizationFunction functionType="DoseFallOff">
+                <FunctionParameters adaptToTargetDoseLevels="true" lowDoseDistance="2.00" weight="2">
+                    <HighDoseLevel relativeToDoseLevel="DL1">100</HighDoseLevel>
+                    <LowDoseLevel relativeToDoseLevel="DL1">26</LowDoseLevel>
+                </FunctionParameters>
+            </OptimizationFunction>
+            <OptimizationFunction functionType="DoseFallOff">
+                <FunctionParameters adaptToTargetDoseLevels="true" lowDoseDistance="0.50" weight="10">
+                    <HighDoseLevel relativeToDoseLevel="DL1">100</HighDoseLevel>
+                    <LowDoseLevel relativeToDoseLevel="DL1">64</LowDoseLevel>
+                </FunctionParameters>
+            </OptimizationFunction>
+        </Roi>
+
+        <Roi name="Ghost_craniaal">
+            <OptimizationFunction functionType="DoseFallOff">
+                <FunctionParameters adaptToTargetDoseLevels="true" lowDoseDistance="1.00" weight="0.5">
+                    <HighDoseLevel relativeToDoseLevel="DL1">100</HighDoseLevel>
+                    <LowDoseLevel relativeToDoseLevel="DL1">0</LowDoseLevel>
+                </FunctionParameters>
+            </OptimizationFunction>
+        </Roi>
+
+        <Roi name="Ear_L_ghost">
+            <OptimizationFunction functionType="DoseFallOff">
+                <FunctionParameters adaptToTargetDoseLevels="true" lowDoseDistance="2.00" weight="1">
+                    <HighDoseLevel relativeToDoseLevel="DL1">100</HighDoseLevel>
+                    <LowDoseLevel relativeToDoseLevel="DL1">46</LowDoseLevel>
+                </FunctionParameters>
+            </OptimizationFunction>
+        </Roi>
+
+        <Roi name="Ear_R_ghost">
+            <OptimizationFunction functionType="DoseFallOff">
+                <FunctionParameters adaptToTargetDoseLevels="true" lowDoseDistance="2.00" weight="1">
+                    <HighDoseLevel relativeToDoseLevel="DL1">100</HighDoseLevel>
+                    <LowDoseLevel relativeToDoseLevel="DL1">46</LowDoseLevel>
+                </FunctionParameters>
+            </OptimizationFunction>
+        </Roi>
+
+        <Roi name="Cochlea_L">
+             <OptimizationFunction functionType="DoseFallOff">
+                <FunctionParameters adaptToTargetDoseLevels="true" lowDoseDistance="2.00" weight="0">
+                    <HighDoseLevel relativeToDoseLevel="highest">100</HighDoseLevel>
+                    <LowDoseLevel relativeToDoseLevel="highest">20</LowDoseLevel>
+                </FunctionParameters>
+            </OptimizationFunction>
+        </Roi>
+
+        <Roi name="Cochlea_R">
+             <OptimizationFunction functionType="DoseFallOff">
+                <FunctionParameters adaptToTargetDoseLevels="true" lowDoseDistance="2.00" weight="0">
+                    <HighDoseLevel relativeToDoseLevel="highest">100</HighDoseLevel>
+                    <LowDoseLevel relativeToDoseLevel="highest">20</LowDoseLevel>
+                </FunctionParameters>
+            </OptimizationFunction>
+        </Roi>
+
+        <Roi name="Oral_Cavity">
+             <OptimizationFunction functionType="DoseFallOff">
+                <FunctionParameters adaptToTargetDoseLevels="true" lowDoseDistance="2.00" weight="0">
+                    <HighDoseLevel relativeToDoseLevel="highest">100</HighDoseLevel>
+                    <LowDoseLevel relativeToDoseLevel="highest">20</LowDoseLevel>
+                </FunctionParameters>
+            </OptimizationFunction>
+        </Roi>
+
+        <Roi name="Parotid_L">
+             <OptimizationFunction functionType="DoseFallOff">
+                <FunctionParameters adaptToTargetDoseLevels="true" lowDoseDistance="2.00" weight="0">
+                    <HighDoseLevel relativeToDoseLevel="highest">100</HighDoseLevel>
+                    <LowDoseLevel relativeToDoseLevel="highest">20</LowDoseLevel>
+                </FunctionParameters>
+            </OptimizationFunction>
+        </Roi>
+
+        <Roi name="Parotid_R">
+             <OptimizationFunction functionType="DoseFallOff">
+                <FunctionParameters adaptToTargetDoseLevels="true" lowDoseDistance="2.00" weight="0">
+                    <HighDoseLevel relativeToDoseLevel="highest">100</HighDoseLevel>
+                    <LowDoseLevel relativeToDoseLevel="highest">20</LowDoseLevel>
+                </FunctionParameters>
+            </OptimizationFunction>
+        </Roi>
+
+        <Roi name="Glnd_Submand_L">
+             <OptimizationFunction functionType="DoseFallOff">
+                <FunctionParameters adaptToTargetDoseLevels="true" lowDoseDistance="2.00" weight="0">
+                    <HighDoseLevel relativeToDoseLevel="highest">100</HighDoseLevel>
+                    <LowDoseLevel relativeToDoseLevel="highest">20</LowDoseLevel>
+                </FunctionParameters>
+            </OptimizationFunction>
+        </Roi>
+
+        <Roi name="Glnd_Submand_R">
+             <OptimizationFunction functionType="DoseFallOff">
+                <FunctionParameters adaptToTargetDoseLevels="true" lowDoseDistance="2.00" weight="0">
+                    <HighDoseLevel relativeToDoseLevel="highest">100</HighDoseLevel>
+                    <LowDoseLevel relativeToDoseLevel="highest">20</LowDoseLevel>
+                </FunctionParameters>
+            </OptimizationFunction>
+        </Roi>
+
+        <Roi name="Musc_Constrict_S">
+             <OptimizationFunction functionType="DoseFallOff">
+                <FunctionParameters adaptToTargetDoseLevels="true" lowDoseDistance="2.00" weight="0">
+                    <HighDoseLevel relativeToDoseLevel="highest">100</HighDoseLevel>
+                    <LowDoseLevel relativeToDoseLevel="highest">20</LowDoseLevel>
+                </FunctionParameters>
+            </OptimizationFunction>
+        </Roi>
+
+        <Roi name="Musc_Constrict_M">
+             <OptimizationFunction functionType="DoseFallOff">
+                <FunctionParameters adaptToTargetDoseLevels="true" lowDoseDistance="2.00" weight="0">
+                    <HighDoseLevel relativeToDoseLevel="highest">100</HighDoseLevel>
+                    <LowDoseLevel relativeToDoseLevel="highest">20</LowDoseLevel>
+                </FunctionParameters>
+            </OptimizationFunction>
+        </Roi>
+
+        <Roi name="Musc_Constrict_I">
+             <OptimizationFunction functionType="DoseFallOff">
+                <FunctionParameters adaptToTargetDoseLevels="true" lowDoseDistance="2.00" weight="0">
+                    <HighDoseLevel relativeToDoseLevel="highest">100</HighDoseLevel>
+                    <LowDoseLevel relativeToDoseLevel="highest">20</LowDoseLevel>
+                </FunctionParameters>
+            </OptimizationFunction>
+        </Roi>
+
+        <Roi name="Cricopharyngeus">
+             <OptimizationFunction functionType="DoseFallOff">
+                <FunctionParameters adaptToTargetDoseLevels="true" lowDoseDistance="2.00" weight="0">
+                    <HighDoseLevel relativeToDoseLevel="highest">100</HighDoseLevel>
+                    <LowDoseLevel relativeToDoseLevel="highest">20</LowDoseLevel>
+                </FunctionParameters>
+            </OptimizationFunction>
+        </Roi>
+
+        <Roi name="Larynx_SG">
+             <OptimizationFunction functionType="DoseFallOff">
+                <FunctionParameters adaptToTargetDoseLevels="true" lowDoseDistance="2.00" weight="0">
+                    <HighDoseLevel relativeToDoseLevel="highest">100</HighDoseLevel>
+                    <LowDoseLevel relativeToDoseLevel="highest">20</LowDoseLevel>
+                </FunctionParameters>
+            </OptimizationFunction>
+        </Roi>
+
+        <Roi name="Glottic_Area">
+             <OptimizationFunction functionType="DoseFallOff">
+                <FunctionParameters adaptToTargetDoseLevels="true" lowDoseDistance="2.00" weight="0">
+                    <HighDoseLevel relativeToDoseLevel="highest">100</HighDoseLevel>
+                    <LowDoseLevel relativeToDoseLevel="highest">20</LowDoseLevel>
+                </FunctionParameters>
+            </OptimizationFunction>
+        </Roi>
+
+        <Roi name="Esophagus">
+             <OptimizationFunction functionType="DoseFallOff">
+                <FunctionParameters adaptToTargetDoseLevels="true" lowDoseDistance="2.00" weight="0">
+                    <HighDoseLevel relativeToDoseLevel="highest">100</HighDoseLevel>
+                    <LowDoseLevel relativeToDoseLevel="highest">20</LowDoseLevel>
+                </FunctionParameters>
+            </OptimizationFunction>
+        </Roi>
+
+        <Roi name="Trachea_ghost">
+             <OptimizationFunction functionType="DoseFallOff">
+                <FunctionParameters adaptToTargetDoseLevels="true" lowDoseDistance="2.00" weight="0">
+                    <HighDoseLevel relativeToDoseLevel="highest">100</HighDoseLevel>
+                    <LowDoseLevel relativeToDoseLevel="highest">20</LowDoseLevel>
+                </FunctionParameters>
+            </OptimizationFunction>
+        </Roi>
+
+        <Roi name="Brain">
+            <OptimizationFunction functionType="MaxDose">
+                <FunctionParameters weight="1">
+                    <DoseLevel default="true">6500</DoseLevel>
+                    <DoseLevel conditionalFractionDoses="312.5">5100</DoseLevel>
+                    <DoseLevel conditionalFractionDoses="600">3100</DoseLevel>
+                </FunctionParameters>D
+            </OptimizationFunction>
+        </Roi>
+
+        <Roi name="Brainstem">
+            <OptimizationFunction functionType="MaxEud">
+                <FunctionParameters eudParameterA="50" weight="3">
+                    <DoseLevel>4000</DoseLevel>
+                </FunctionParameters>
+            </OptimizationFunction>
+        </Roi>
+
+        <Roi name="Brainstem+3">
+            <OptimizationFunction functionType="MaxEud">
+                <FunctionParameters eudParameterA="50" weight="3">
+                    <DoseLevel>4400</DoseLevel>
+                </FunctionParameters>
+            </OptimizationFunction>
+        </Roi>
+
+        <Roi name="SpinalCord">
+            <OptimizationFunction functionType="MaxEud">
+                <FunctionParameters eudParameterA="50" weight="3">
+                    <DoseLevel>4000</DoseLevel>
+                </FunctionParameters>
+            </OptimizationFunction>
+        </Roi>
+
+        <Roi name="SpinalCord+3">
+            <OptimizationFunction functionType="MaxEud">
+                <FunctionParameters eudParameterA="50" weight="3">
+                    <DoseLevel>4400</DoseLevel>
+                </FunctionParameters>
+            </OptimizationFunction>
+        </Roi>
+  
+        <Roi name="Cochlea_L">
+            <OptimizationFunction functionType="MaxEud">
+                <FunctionParameters eudParameterA="1" weight="0">
+                    <DoseLevel>1000</DoseLevel>
+                </FunctionParameters>
+            </OptimizationFunction>
+        </Roi>
+
+        <Roi name="Cochlea_R">
+            <OptimizationFunction functionType="MaxEud">
+                <FunctionParameters eudParameterA="1" weight="0">
+                    <DoseLevel>1000</DoseLevel>
+                </FunctionParameters>
+            </OptimizationFunction>
+        </Roi>
+
+        <Roi name="Oral_Cavity_obj">
+            <OptimizationFunction functionType="MaxEud">
+                <FunctionParameters eudParameterA="1" weight="0">
+                    <DoseLevel>2800</DoseLevel>
+                </FunctionParameters>
+            </OptimizationFunction>
+        </Roi>
+
+        <Roi name="Parotid_L_obj">
+            <OptimizationFunction functionType="MaxEud">
+                <FunctionParameters eudParameterA="1" weight="0">
+                    <DoseLevel>2800</DoseLevel>
+                </FunctionParameters>
+            </OptimizationFunction>
+        </Roi>
+
+        <Roi name="Parotid_R_obj">
+            <OptimizationFunction functionType="MaxEud">
+                <FunctionParameters eudParameterA="1" weight="0">
+                    <DoseLevel>2800</DoseLevel>
+                </FunctionParameters>
+            </OptimizationFunction>
+        </Roi>
+
+        <Roi name="Submand_L_obj">
+            <OptimizationFunction functionType="MaxEud">
+                <FunctionParameters eudParameterA="1" weight="0">
+                    <DoseLevel>3500</DoseLevel>
+                </FunctionParameters>
+            </OptimizationFunction>
+        </Roi>
+
+        <Roi name="Submand_R_obj">
+            <OptimizationFunction functionType="MaxEud">
+                <FunctionParameters eudParameterA="1" weight="0">
+                    <DoseLevel>3500</DoseLevel>
+                </FunctionParameters>
+            </OptimizationFunction>
+        </Roi>
+
+        <Roi name="Musc_Constrict_S">
+            <OptimizationFunction functionType="MaxEud">
+                <FunctionParameters eudParameterA="1" weight="0">
+                    <DoseLevel>4000</DoseLevel>
+                </FunctionParameters>
+            </OptimizationFunction>
+        </Roi>
+
+        <Roi name="Musc_Constrict_M">
+            <OptimizationFunction functionType="MaxEud">
+                <FunctionParameters eudParameterA="1" weight="0">
+                    <DoseLevel>4000</DoseLevel>
+                </FunctionParameters>
+            </OptimizationFunction>
+        </Roi>
+
+        <Roi name="Musc_Constrict_I">
+            <OptimizationFunction functionType="MaxEud">
+                <FunctionParameters eudParameterA="1" weight="0">
+                    <DoseLevel>4000</DoseLevel>
+                </FunctionParameters>
+            </OptimizationFunction>
+        </Roi>
+
+        <Roi name="Cricopharyngeus">
+            <OptimizationFunction functionType="MaxEud">
+                <FunctionParameters eudParameterA="1" weight="0">
+                    <DoseLevel>4000</DoseLevel>
+                </FunctionParameters>
+            </OptimizationFunction>
+        </Roi>
+
+        <Roi name="Larynx_SG">
+            <OptimizationFunction functionType="MaxEud">
+                <FunctionParameters eudParameterA="1" weight="0">
+                    <DoseLevel>4000</DoseLevel>
+                </FunctionParameters>
+            </OptimizationFunction>
+        </Roi>
+
+        <Roi name="Glottic_Area">
+            <OptimizationFunction functionType="MaxEud">
+                <FunctionParameters eudParameterA="1" weight="0">
+                    <DoseLevel>4000</DoseLevel>
+                </FunctionParameters>
+            </OptimizationFunction>
+        </Roi>
+
+        <Roi name="Esophagus">
+            <OptimizationFunction functionType="MaxEud">
+                <FunctionParameters eudParameterA="1" weight="0">
+                    <DoseLevel>4000</DoseLevel>
+                </FunctionParameters>
+            </OptimizationFunction>
+        </Roi>
+
+        <Roi name="Trachea_ghost">
+            <OptimizationFunction functionType="MaxEud">
+                <FunctionParameters eudParameterA="1" weight="0">
+                    <DoseLevel>3000</DoseLevel>
+                </FunctionParameters>
+            </OptimizationFunction>
+        </Roi>
+
+
+    </ObjectiveTemplate>
+</RayStationScriptTemplates>

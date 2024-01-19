@@ -1,0 +1,92 @@
+{
+    "CTV_DL1 [D98%>95%]":{
+        "Passed": -1, "Voxelwise-worst": -1, "NominalDose": -1, "Scenarios": []  
+    }
+    , "CTV_DL1 [D98%>94%]":{
+        "Passed": -1, "Voxelwise-worst": -1, "NominalDose": -1, "Scenarios": []  
+    }
+    , "CTV_DL2 [D98%>95%]":{
+        "Passed": -1, "Voxelwise-worst": -1, "NominalDose": -1, "Scenarios": []  
+    }
+    , "CTV_DL2 [D98%>94%]":{
+        "Passed": -1, "Voxelwise-worst": -1, "NominalDose": -1, "Scenarios": [] 
+    }
+    , "CTV_DL2 [D2%<107%]":{
+        "Passed": -1, "Voxelwise-worst": -1, "NominalDose": -1, "Scenarios": [] 
+    }
+    , "SpinalCord_Core [D0.03cc (cGy) < 5000]":{
+        "Passed": -1, "Voxelwise-worst": -1, "NominalDose": -1, "Scenarios": []
+    }
+    , "SpinalCord_Core [D0.03cc (cGy) < 5569]":{
+        "Passed": -1, "Voxelwise-worst": -1, "NominalDose": -1, "Scenarios": []
+    }
+    , "SpinalCord_Surf [D0.03cc (cGy) < 6000]":{
+        "Passed": -1, "Voxelwise-worst": -1, "NominalDose": -1, "Scenarios": []
+    }
+    , "SpinalCord_Surf [D0.03cc (cGy) < 6310]":{
+        "Passed": -1, "Voxelwise-worst": -1, "NominalDose": -1, "Scenarios": []
+    }
+    , "Brainstem_Core [D0.03cc (cGy) < 5400]":{
+        "Passed": -1, "Voxelwise-worst": -1, "NominalDose": -1, "Scenarios": []
+    }
+    , "Brainstem_Core [D0.03cc (cGy) < 5870]":{
+        "Passed": -1, "Voxelwise-worst": -1, "NominalDose": -1, "Scenarios": []
+    }
+    , "Brainstem_Surf [D0.03cc (cGy) < 6000]":{
+        "Passed": -1, "Voxelwise-worst": -1, "NominalDose": -1, "Scenarios": []
+    }
+    , "Brainstem_Surf [D0.03cc (cGy) < 6310]":{
+        "Passed": -1, "Voxelwise-worst": -1, "NominalDose": -1, "Scenarios": []
+    } 
+    , "Brain-CTV_DL2 [D0.03cc (cGy)]":{
+        "Passed": -1, "Voxelwise-worst": -1, "NominalDose": -1, "Scenarios": []
+    }
+    , "Brain-CTV_DL2 [D0.03cc (cGy)]":{
+        "Passed": -1, "Voxelwise-worst": -1, "NominalDose": -1, "Scenarios": []
+    }
+    , "Cochlea_L [Dmean (cGy)]":{
+        "Passed": -1, "Voxelwise-worst": -1, "NominalDose": -1, "Scenarios": []
+    }
+    , "Cochlea_R [Dmean (cGy)]":{
+        "Passed": -1, "Voxelwise-worst": -1, "NominalDose": -1, "Scenarios": []
+    }
+    , "Parotid_L [Dmean (cGy)]":{
+        "Passed": -1, "Voxelwise-worst": -1, "NominalDose": -1, "Scenarios": []
+    }
+    , "Parotid_R [Dmean (cGy)]":{
+        "Passed": -1, "Voxelwise-worst": -1, "NominalDose": -1, "Scenarios": []
+    }
+    , "Glnd_Submand_L [Dmean (cGy)]":{
+        "Passed": -1, "Voxelwise-worst": -1, "NominalDose": -1, "Scenarios": []
+    }
+    , "Glnd_Submand_R [Dmean (cGy)]":{
+        "Passed": -1, "Voxelwise-worst": -1, "NominalDose": -1, "Scenarios": []
+    }
+    , "Oral_Cavity [Dmean (cGy)]":{
+        "Passed": -1, "Voxelwise-worst": -1, "NominalDose": -1, "Scenarios": []
+    }
+    , "Musc_Constrict_S [Dmean (cGy)]":{
+        "Passed": -1, "Voxelwise-worst": -1, "NominalDose": -1, "Scenarios": []
+    }
+    , "Musc_Constrict_M [Dmean (cGy)]":{
+        "Passed": -1, "Voxelwise-worst": -1, "NominalDose": -1, "Scenarios": []
+    }
+     , "Musc_Constrict_I [Dmean (cGy)]":{
+         "Passed": -1, "Voxelwise-worst": -1, "NominalDose": -1, "Scenarios": []
+     }
+    , "Cricopharyngeus [Dmean (cGy)]":{
+        "Passed": -1, "Voxelwise-worst": -1, "NominalDose": -1, "Scenarios": [] 
+    }
+    , "Larynx_SG [Dmean (cGy)]":{
+        "Passed": -1, "Voxelwise-worst": -1, "NominalDose": -1, "Scenarios": [] 
+    }
+    , "Glottic_Area [Dmean (cGy)]":{
+        "Passed": -1, "Voxelwise-worst": -1, "NominalDose": -1, "Scenarios": [] 
+    }
+    , "Esophagus [Dmean (cGy)]":{
+        "Passed": -1, "Voxelwise-worst": -1, "NominalDose": -1, "Scenarios": [] 
+    }
+    , "Bone_Mandible [D2%<100%]":{
+        "Passed": -1, "Voxelwise-worst": -1, "NominalDose": -1, "Scenarios": [] 
+    }
+}
